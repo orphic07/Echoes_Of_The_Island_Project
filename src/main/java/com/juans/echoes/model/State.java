@@ -1,17 +1,16 @@
 package com.juans.echoes.model;
 
-import java.util.List;
 import java.util.Map;
 
 public class State {
     private String id;
-    private String description;
     private Map<String, Choice> choices;
+    private boolean isEndState;
 
-    public State(String id, String description, Map<String, Choice> choices) {
+    public State(String id, Map<String, Choice> choices, boolean isEndState) {
         this.id = id;
-        this.description = description;
         this.choices = choices;
+        this.isEndState = isEndState;
     }
 
     public String getId() {
@@ -20,14 +19,6 @@ public class State {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public void addChoice(String key, Choice choice) {

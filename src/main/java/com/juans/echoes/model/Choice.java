@@ -9,7 +9,16 @@ public class Choice {
         this.nextState = newState;
     }
 
-    public void executeChoice(){
+    public String getText() {
+        return text;
+    }
 
+    public State getNextState() {
+        return nextState;
+    }
+
+    @Override
+    public String toString(){
+        return text;
     }
 }

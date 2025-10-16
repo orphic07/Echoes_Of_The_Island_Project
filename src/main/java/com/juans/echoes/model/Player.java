@@ -24,6 +24,7 @@ public class Player {
 
     public void setHasArtifact(boolean hasArtifact) {
         this.hasArtifact = hasArtifact;
+
     }
 
     public boolean isAlive() {
