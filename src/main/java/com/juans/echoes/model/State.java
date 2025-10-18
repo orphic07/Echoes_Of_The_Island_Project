@@ -6,11 +6,21 @@ public class State {
     private String id;
     private Map<String, Choice> choices;
     private boolean isEndState;
+    private String endType;
 
-    public State(String id, Map<String, Choice> choices, boolean isEndState) {
+    public State(String id, Map<String, Choice> choices, boolean isEndState, String endType) {
         this.id = id;
         this.choices = choices;
         this.isEndState = isEndState;
+        this.endType = endType;
+    }
+
+    public String getEndType() {
+        return endType;
+    }
+
+    public void setEndType(String endType) {
+        this.endType = endType;
     }
 
     public String getId() {
@@ -31,5 +41,9 @@ public class State {
 
     public void setChoices(Map<String, Choice> choices) {
         this.choices = choices;
+    }
+
+    public boolean isEndState() {
+        return isEndState;
     }
 }
