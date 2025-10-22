@@ -4,6 +4,7 @@ public class Player {
     private State currentState;
     private boolean hasArtifact;
     private boolean isAlive;
+    private String lastStateId;
 
     public Player() {
         this.hasArtifact = false;
@@ -15,10 +16,18 @@ public class Player {
     }
 
     public void setCurrentState(State currentState) {
+        if (this.currentState != null) {
+            this.lastStateId = this.currentState.getId();
+        }
         this.currentState = currentState;
+
     }
 
-    public boolean hasArtifact() {
+    public String getLastStateId() {
+        return lastStateId;
+    }
+
+    public boolean getHasArtifact() {
         return hasArtifact;
     }
 

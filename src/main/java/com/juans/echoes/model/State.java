@@ -15,6 +15,10 @@ public class State {
         this.endType = endType;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public String getEndType() {
         return endType;
     }
@@ -23,8 +27,8 @@ public class State {
         this.endType = endType;
     }
 
-    public String getId() {
-        return id;
+    public void setEndState(boolean endState) {
+        isEndState = endState;
     }
 
     public void setId(String id) {

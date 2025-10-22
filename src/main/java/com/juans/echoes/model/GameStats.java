@@ -5,6 +5,8 @@ public class GameStats {
     private int deaths;
     private int endingACount;
     private int endingBCount;
+    private int endingCCount;
+    private int endingDCount;
 
     public GameStats(){
         this.gamesPlayed = 0;
@@ -29,6 +31,14 @@ public class GameStats {
         endingBCount++;
     }
 
+    public void increaseEndingC() {
+        endingCCount++;
+    }
+
+    public void increaseEndingD(){
+        endingDCount++;
+    }
+
     public int getGamesPlayed() {
         return gamesPlayed;
     }
@@ -37,11 +47,19 @@ public class GameStats {
         return deaths;
     }
 
-    public int getEndingACount() {
+    public int getEndingA() {
         return endingACount;
     }
 
-    public int getEndingBCount() {
+    public int getEndingB() {
         return endingBCount;
+    }
+
+    public int getEndingC() {
+        return endingCCount;
+    }
+
+    public int getEndingD() {
+        return endingDCount;
     }
 }
