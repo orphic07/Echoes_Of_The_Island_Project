@@ -45,9 +45,18 @@ Each state lets the player make decisions that lead to new paths — or death.
 
 ---
 
-## How to Run the Project  
+## JUnit tests ensure that core game features work correctly, including:  
+- Proper game initialization  
+- Correct state transitions  
+- Artifact logic  
+- Restart and stats tracking  
 
-1. Import the project into **IntelliJ IDEA** or **Eclipse**.  
-2. Make sure your **Apache Tomcat** server is configured.  
-3. Deploy the app and start the server.  
-4. Open your browser and go to:  
+## Endings & Stats: Each playthrough updates your statistics:
+- Deaths
+- Ending A: The True Escape
+- Ending B: The Hollow Return
+- Ending C: The Collapse
+- Ending D: The Silence
+- Games Played
+These stats are displayed dynamically during the endings and death screens.
+
