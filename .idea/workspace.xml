@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ceac31a4-f674-4f85-8ee7-da2dc6d94c7b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/juans/echoes/controller/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juans/echoes/controller/GameEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juans/echoes/model/GameStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juans/echoes/model/GameStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juans/echoes/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juans/echoes/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juans/echoes/model/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juans/echoes/model/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/juans/echoes/servlet/GameServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juans/echoes/servlet/GameServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/endcave.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/endcave.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,24 +43,93 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Smart Tomcat.EchoesOfTheIsland.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Schemas/web-app_4_0.xsd&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3063063&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.GameEngineTest.executor": "Run",
+    "JUnit.GameEngineTest.testInitializeGame_InitializeEverythingProperly.executor": "Run",
+    "JUnit.GameEngineTest.testRestartGame_ResetsPlayerProperly.executor": "Run",
+    "JUnit.GameEngineTest.testStats_IncrementDeaths.executor": "Run",
+    "JUnit.GameEngineTest.testStats_IncrementGamesPlayed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Smart Tomcat.EchoesOfTheIsland.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Schemas/web-app_4_0.xsd",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3063063",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Smart Tomcat.EchoesOfTheIsland">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="EchoesOfTheIsland" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameEngineTest.testInitializeGame_InitializeEverythingProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EchoesOfTheIsland" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juans.echoes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.juans.echoes" />
+      <option name="MAIN_CLASS_NAME" value="com.juans.echoes.GameEngineTest" />
+      <option name="METHOD_NAME" value="testInitializeGame_InitializeEverythingProperly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameEngineTest.testRestartGame_ResetsPlayerProperly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EchoesOfTheIsland" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juans.echoes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.juans.echoes" />
+      <option name="MAIN_CLASS_NAME" value="com.juans.echoes.GameEngineTest" />
+      <option name="METHOD_NAME" value="testRestartGame_ResetsPlayerProperly" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameEngineTest.testStats_IncrementDeaths" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EchoesOfTheIsland" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juans.echoes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.juans.echoes" />
+      <option name="MAIN_CLASS_NAME" value="com.juans.echoes.GameEngineTest" />
+      <option name="METHOD_NAME" value="testStats_IncrementDeaths" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameEngineTest.testStats_IncrementGamesPlayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EchoesOfTheIsland" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juans.echoes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.juans.echoes" />
+      <option name="MAIN_CLASS_NAME" value="com.juans.echoes.GameEngineTest" />
+      <option name="METHOD_NAME" value="testStats_IncrementGamesPlayed" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -97,10 +159,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.GameEngineTest.testInitializeGame_InitializeEverythingProperly" />
+      <item itemvalue="JUnit.GameEngineTest.testRestartGame_ResetsPlayerProperly" />
+      <item itemvalue="JUnit.GameEngineTest.testStats_IncrementDeaths" />
+      <item itemvalue="JUnit.GameEngineTest.testStats_IncrementGamesPlayed" />
       <item itemvalue="Smart Tomcat.EchoesOfTheIsland" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameEngineTest.testStats_IncrementGamesPlayed" />
+        <item itemvalue="JUnit.GameEngineTest.testInitializeGame_InitializeEverythingProperly" />
+        <item itemvalue="JUnit.GameEngineTest.testStats_IncrementDeaths" />
+        <item itemvalue="JUnit.GameEngineTest.testRestartGame_ResetsPlayerProperly" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

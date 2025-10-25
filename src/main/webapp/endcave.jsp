@@ -175,6 +175,7 @@
 
 <div id="statsBox">
     <p><strong>Deaths:</strong> ${stats.deaths}</p>
+    <p><strong>Games Played:</strong> ${stats.gamesPlayed}</p>
     <p><strong>Ending A (The True Escape):</strong> ${stats.endingA}</p>
     <p><strong>Ending B (The Silent Collapse):</strong> ${stats.endingB}</p>
     <p><strong>Ending C (The Corrupted Path):</strong> ${stats.endingC}</p>

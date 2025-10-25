@@ -66,7 +66,7 @@ public class GameEngine {
 
         john.setCurrentState(current.getChoices().get(choiceKey).getNextState());
 
-        State newState = john.getCurrentState(); // <---- new reference!
+        State newState = john.getCurrentState();
 
         if (john.getCurrentState().getId().equals("Ruins")) {
             if (john.getHasArtifact()){
@@ -100,11 +100,11 @@ public class GameEngine {
 
         if (newState.isEndState()) {
             switch (newState.getEndType()) {
-                case "death" -> { john.setAlive(false); stats.increaseDeaths();}
-                case "goodArtifact" -> stats.increaseEndingA();
-                case "neutralArtifact" -> stats.increaseEndingB();
-                case "badNoArtifact" -> stats.increaseEndingC();
-                case "neutralNoArtifact" -> stats.increaseEndingD();
+                case "death" -> { john.setAlive(false); stats.increaseDeaths(); stats.increaseGamesPlayed();}
+                case "goodArtifact" -> { stats.increaseGamesPlayed(); stats.increaseEndingA(); }
+                case "neutralArtifact" -> { stats.increaseGamesPlayed(); stats.increaseEndingB(); }
+                case "badNoArtifact" -> { stats.increaseGamesPlayed(); stats.increaseEndingC(); }
+                case "neutralNoArtifact" -> { stats.increaseGamesPlayed();stats.increaseEndingD(); }
             }
         } else {
             System.out.println("Moved to state: " + newState.getId());
@@ -130,5 +130,7 @@ public class GameEngine {
         return stats;
     }
 
-
+    public Map<String, State> getStates() {
+        return states;
+    }
 }

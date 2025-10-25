@@ -8,8 +8,8 @@
     <style>
         body {
             font-family: "Georgia", serif;
-            background: radial-gradient(circle at center, #0e0e10 0%, #000 100%);
-            color: #e4e4e4;
+            background: radial-gradient(circle at center, #1a1633 0%, #05010d 100%);
+            color: #f1e9ff;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,16 +20,18 @@
         }
 
         h1 {
-            font-size: 2.5em;
-            color: #b3aaff;
+            font-size: 2.7em;
+            color: #e3b34d; /* golden ruins glow */
             margin-bottom: 1em;
+            text-shadow: 0 0 15px rgba(227,179,77,0.4);
         }
 
         p {
             width: 75%;
             margin-bottom: 2em;
-            line-height: 1.6em;
+            line-height: 1.7em;
             font-size: 1.1em;
+            color: #eae7ff;
         }
 
         form {
@@ -39,20 +41,22 @@
         }
 
         button {
-            background-color: #1e1c2a;
-            color: #dcdcff;
-            border: 1px solid #6c63ff;
-            padding: 0.8em 1.4em;
-            border-radius: 8px;
+            background-color: #2a223a;
+            color: #f6e9d0;
+            border: 1px solid #e3b34d;
+            padding: 0.9em 1.5em;
+            border-radius: 10px;
             cursor: pointer;
             font-size: 1em;
             transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(227,179,77,0.2);
         }
 
         button:hover {
-            background-color: #3a36a0;
+            background-color: #3b2f4a;
+            border-color: #ffd37a;
             color: #fff;
-            border-color: #a09bff;
+            box-shadow: 0 0 15px rgba(255,211,122,0.5);
         }
     </style>
 </head>
